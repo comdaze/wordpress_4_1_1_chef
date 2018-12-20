@@ -1,4 +1,16 @@
-cookbook_file "/var/www/wordpress/current/wp-config.php" do
+directory "/srv/www/" do
+  mode 0755
+  owner 'root'
+  group 'root'
+  action :create
+end
+directory "/srv/www/wordpress" do
+  mode 0755
+  owner 'www-data'
+  group 'www-data'
+  action :create
+end
+cookbook_file "/src/www/wordpress/current/wp-config.php" do
   source "wp-config.php"
   mode '0755'
   action :create
