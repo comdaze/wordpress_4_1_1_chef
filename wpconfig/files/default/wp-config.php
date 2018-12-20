@@ -14,7 +14,7 @@
  * @package WordPress
  */
 
-define('WP_REDIS_HOST', '');
+define('WP_REDIS_HOST', 'wordpress.rqtwxz.0001.apse1.cache.amazonaws.com');
  
 define('WP_HOME','');
 define('WP_SITEURL','');
@@ -30,7 +30,7 @@ define('DB_USER', 'wordpress');
 define('DB_PASSWORD', 'wordpress');
 
 /** MySQL hostname */
-define('DB_HOST', '');
+define('DB_HOST', 'wordpress.c4bbrtysc4b7.ap-southeast-1.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -83,3 +83,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+define( 'AWS_ACCESS_KEY_ID', 'AKIAJWFZLU7PFIPKOOZQ' );
+define( 'AWS_SECRET_ACCESS_KEY', '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' );
