@@ -6,8 +6,8 @@ directory "/srv/www/" do
 end
 directory "/srv/www/wordpress" do
   mode 0755
-  owner 'www-data'
-  group 'www-data'
+  owner 'root'
+  group 'root'
   action :create
 end
 cookbook_file "/src/www/wordpress/wp-config.php" do
